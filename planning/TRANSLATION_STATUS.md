@@ -11,6 +11,9 @@ This matrix tracks the reviewed English source edition and its Turkish and Germa
 | 05 - Working with Commits           | Draft 1.0      | Not started | Not started | Draft 1.0 | Draft 1.0 | Draft 1.0 | 2026-08-03        |
 | 06 - Branching Strategies           | Draft 1.0      | Not started | Not started | Draft 1.0 | Draft 1.0 | Draft 1.0 | 2026-08-03        |
 | 07 - Merge & Merge Conflicts        | Draft 1.0      | Not started | Not started | Draft 1.0 | Draft 1.0 | Draft 1.0 | 2026-08-03        |
+| 28-38 - GitHub Actions              | Draft 1.0      | Draft 1.0   | Draft 1.0   | Draft 1.0 | Draft 1.0 | Draft 1.0 | 2026-09-22        |
+| 39-45 - CI/CD                       | Draft 1.0      | Draft 1.0   | Draft 1.0   | Draft 1.0 | Draft 1.0 | Draft 1.0 | 2026-09-23        |
+| 46-51 - DevOps                      | Draft 1.0      | Draft 1.0   | Draft 1.0   | Draft 1.0 | Draft 1.0 | Draft 1.0 | 2026-09-24        |
 
 ## Status Values
 
