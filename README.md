@@ -36,11 +36,22 @@ This course is divided into multiple parts.
 
 | Part | Topic | Status |
 |------|-------|--------|
-| Part 1 | Git Foundations | 🚧 In Progress |
+| Part 1 | Git Foundations | 🚧 In Progress (Initial content available) |
 | Part 2 | GitHub | ⏳ Planned |
 | Part 3 | GitHub Actions | ⏳ Planned |
 | Part 4 | CI/CD | ⏳ Planned |
 | Part 5 | DevOps | ⏳ Planned |
+
+Detailed chapter status and progress are maintained in the [roadmap](ROADMAP.md).
+
+## 🧭 Navigation
+
+- [Architecture](docs/architecture/ARCHITECTURE.md)
+- [Roadmap](ROADMAP.md)
+- [Turkish notebook: GitHub ve DevOps Temelleri](notebooks/tr/01-github-ve-devops-temelleri.md)
+- [Exercise 01: Repository Health Check](exercises/01-repository-health-check.md)
+- [Planning documents](planning/)
+- [Release documentation](docs/releases/)
 
 ---
 
@@ -50,10 +61,25 @@ This course is divided into multiple parts.
 notebooks/
 assets/
 docs/
+planning/
+templates/
 labs/
 quizzes/
 exercises/
+.github/
 ```
+
+The repository is organized as follows:
+
+- `notebooks/` — primary educational content organized by language and chapter
+- `exercises/` — practice exercises that reinforce notebook concepts
+- `labs/` — guided hands-on implementations
+- `quizzes/` — knowledge assessments
+- `docs/` — repository, architecture, and release documentation
+- `planning/` — backlog, sprint, decision, idea, and internal change records
+- `templates/` — reusable document and content templates
+- `assets/` — images, diagrams, icons, and other static resources
+- `.github/` — GitHub configuration and community templates
 
 ---
 
