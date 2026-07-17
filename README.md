@@ -48,8 +48,7 @@ Detailed chapter status and progress are maintained in the [roadmap](ROADMAP.md)
 
 - [Architecture](docs/architecture/ARCHITECTURE.md)
 - [Roadmap](ROADMAP.md)
-- [Turkish notebook: GitHub ve DevOps Temelleri](notebooks/tr/01-github-ve-devops-temelleri.md)
-- [Exercise 01: Repository Health Check](exercises/01-repository-health-check.md)
+- [Chapter 01: Why Version Control?](notebooks/en/01-why-version-control.md)
 - [Planning documents](planning/)
 - [Release documentation](docs/releases/)
 
@@ -99,9 +98,9 @@ The repository is organized as follows:
 
 This project is planned to be available in:
 
-- 🇹🇷 Turkish (Primary)
-- 🇩🇪 German
-- 🇬🇧 English
+- English (Canonical)
+- Turkish (Translation)
+- German (Planned)
 
 ---
 

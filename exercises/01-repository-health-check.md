@@ -1,4 +1,6 @@
-# Egzersiz 01 — Repository Health Check
+# Repository Health Check
+
+> **Status:** Legacy reference material. This exercise is retained for Turkish-language support but is not paired with the current Chapter 01. Follow the [roadmap](../ROADMAP.md) for the canonical learning sequence.
 
 Bir deneme reposunda aşağıdaki kontrol listesini uygulayın.
 

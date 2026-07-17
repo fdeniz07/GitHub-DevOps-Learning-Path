@@ -1,6 +1,6 @@
-# AIOS Release Checklist
+# GitHub & DevOps Learning Path Release Checklist
 
-This checklist ensures that every AIOS release is consistent, stable, and ready for publication.
+This checklist ensures that every release is consistent, stable, and ready for publication.
 
 ---
 
@@ -10,9 +10,9 @@ This checklist ensures that every AIOS release is consistent, stable, and ready 
 - [ ] Repository topics reviewed
 - [ ] Social preview image configured
 - [ ] README reviewed
-- [ ] CHANGELOG updated
-- [ ] ROADMAP reviewed
-- [ ] LICENSE verified
+- [ ] ROADMAP reviewed and chapter statuses are accurate
+- [ ] `project-manifest.md` reviewed
+- [ ] License information reviewed
 
 ---
 
@@ -20,9 +20,9 @@ This checklist ensures that every AIOS release is consistent, stable, and ready 
 
 - [ ] Internal links verified
 - [ ] Markdown formatting validated
-- [ ] Images rendered correctly
-- [ ] PROJECT_STRUCTURE.md updated
-- [ ] MANIFEST.md updated
+- [ ] Mermaid diagrams render correctly in GitHub
+- [ ] Images and diagrams have an educational purpose and captions where required
+- [ ] `docs/architecture/ARCHITECTURE.md` reflects the current structure
 
 ---
 
@@ -31,30 +31,24 @@ This checklist ensures that every AIOS release is consistent, stable, and ready 
 - [ ] No duplicate files
 - [ ] Folder structure reviewed
 - [ ] Naming conventions verified
-- [ ] Rules organized
-- [ ] Templates organized
-- [ ] Prompts organized
-- [ ] Agents organized
+- [ ] Templates reviewed
+- [ ] `.agents/` rule synchronization reviewed
 
 ---
 
-# AI Framework
+# Educational Content
 
-- [ ] AGENTS.md reviewed
-- [ ] PROJECT_RULES.md reviewed
-- [ ] Workflows validated
-- [ ] Prompt library reviewed
-- [ ] Templates tested
+- [ ] Learning objectives, practice, and next-chapter transition are present
+- [ ] Chapter navigation points only to available or clearly labelled draft content
+- [ ] Visual-learning minimum is met where appropriate: diagrams, workflow or process flow, comparison, and real-world scenario
+- [ ] Exercises, labs, and quizzes reinforce concepts already introduced
 
 ---
 
 # GitHub Community
 
-- [ ] CONTRIBUTING.md reviewed
-- [ ] CODE_OF_CONDUCT.md reviewed
-- [ ] SECURITY.md reviewed
-- [ ] Issue templates updated
-- [ ] Pull request template updated
+- [ ] Pull request template reviewed
+- [ ] Repository settings and community files reviewed when present
 
 ---
 
@@ -62,7 +56,7 @@ This checklist ensures that every AIOS release is consistent, stable, and ready 
 
 - [ ] Version selected
 - [ ] Semantic Version verified
-- [ ] Release notes prepared
+- [ ] Release notes prepared in `planning/CHANGELOG_INTERNAL.md` when applicable
 - [ ] Git tag created
 - [ ] GitHub Release published
 

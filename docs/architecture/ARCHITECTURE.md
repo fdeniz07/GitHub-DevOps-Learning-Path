@@ -61,17 +61,16 @@ The repository architecture is based on the following principles:
 
 Learning content follows a consistent educational workflow.
 
+```mermaid
+flowchart TD
+    R[Roadmap] --> N[Notebook]
+    N --> E[Exercise]
+    N --> L[Lab]
+    N --> Q[Quiz]
+    N --> S[Summary]
 ```
-ROADMAP
-    │
-    ▼
-Notebook
-    │
-    ├── Exercise
-    ├── Lab
-    ├── Quiz
-    └── Summary
-```
+
+*Figure 1. The roadmap defines chapter order; the notebook is the primary artifact that practice and assessment artifacts extend.*
 
 Each chapter is designed to progress from theory to practical application.
 
@@ -89,6 +88,12 @@ The roadmap is the authoritative course sequence. A published chapter begins wit
 | Summary | Consolidates the chapter's key learning objectives. | Links back to the primary notebook. |
 
 Artifacts may be introduced incrementally. A chapter is not required to have every companion artifact before its notebook is published; unavailable artifacts must not be presented as completed content.
+
+## Canonical Curriculum and Legacy Material
+
+The roadmap is the source of truth for the current learning sequence. A chapter linked from the roadmap is canonical. Material retained for reference, experimentation, or translation support must be clearly labelled as legacy and must not be presented as a current numbered chapter or its companion artifact.
+
+This distinction preserves useful multilingual material without allowing it to bypass the progressive curriculum.
 
 ## Content Metadata
 
