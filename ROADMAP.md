@@ -19,7 +19,7 @@ Understand version control concepts and become confident using Git in daily deve
 ### Chapters
 
 - [ ] [01 - Why Version Control?](notebooks/en/01-why-version-control.md) *(Draft)*
-- [ ] 02 - Git Architecture
+- [ ] [02 - Git Architecture](notebooks/en/02-git-architecture.md) *(Draft)*
 - [ ] 03 - Installing Git
 - [ ] 04 - Creating Your First Repository
 - [ ] 05 - Working with Commits
