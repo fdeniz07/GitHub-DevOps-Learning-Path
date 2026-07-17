@@ -1,6 +1,7 @@
 # GitHub ve DevOps Temelleri
 
-> **Status:** Legacy reference material. This document is retained for Turkish-language support but is not part of the current numbered learning path. Follow the [roadmap](../../ROADMAP.md) for the canonical chapter sequence.
+> **Status:** Pending curriculum integration.
+This content is preserved and will be moved to its appropriate chapter as the learning path evolves.
 
 > Seviye: Başlangıç · Süre: 90 dakika · Önkoşullar: Temel terminal kullanımı
 
