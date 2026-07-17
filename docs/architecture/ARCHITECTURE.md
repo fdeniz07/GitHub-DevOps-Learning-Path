@@ -42,6 +42,8 @@ The repository follows a modular structure where each top-level directory has a 
 | `assets/` | Images, diagrams, and static resources. |
 | `.github/` | GitHub configuration and community templates. |
 
+Repository-level governance files remain at the repository root so they are easy to discover. The `README.md` is the entry point; `ROADMAP.md`, `project-manifest.md`, `course-rules.md`, and `ai-guidelines.md` define the course plan, project metadata, educational standards, and AI collaboration guidance respectively.
+
 ### Organization Principles
 
 The repository architecture is based on the following principles:
@@ -72,6 +74,32 @@ Notebook
 ```
 
 Each chapter is designed to progress from theory to practical application.
+
+## Artifact Relationships and Navigation
+
+The roadmap is the authoritative course sequence. A published chapter begins with a notebook in `notebooks/<language>/`; related exercises, labs, and quizzes extend that notebook rather than duplicate its explanation.
+
+| Artifact | Relationship | Navigation requirement |
+|----------|--------------|------------------------|
+| Roadmap entry | Defines the chapter's place and status in the learning path. | Links learners to the primary notebook when it is available. |
+| Notebook | Primary learning artifact for a chapter. | Links to its related exercise, lab, quiz, or summary when those artifacts are available. |
+| Exercise | Reinforces concepts introduced by its notebook. | Identifies the related chapter or notebook. |
+| Lab | Applies one or more notebook concepts in a realistic scenario. | Identifies its prerequisites and related chapter. |
+| Quiz | Assesses the learning objectives of its notebook. | Identifies the related chapter or notebook. |
+| Summary | Consolidates the chapter's key learning objectives. | Links back to the primary notebook. |
+
+Artifacts may be introduced incrementally. A chapter is not required to have every companion artifact before its notebook is published; unavailable artifacts must not be presented as completed content.
+
+## Content Metadata
+
+Content metadata keeps the roadmap, repository navigation, and individual learning artifacts consistent without introducing a separate metadata system.
+
+- The roadmap records chapter order and progress status.
+- The repository root `project-manifest.md` records project-wide course, language, output, difficulty, and AI-framework metadata.
+- Each published learning artifact uses a clear, ordered filename and states its language, chapter context, and prerequisites or related artifacts in its content.
+- When an artifact is added, its navigation links and the corresponding roadmap status are reviewed together.
+
+This lightweight approach makes relationships visible to learners and maintainers while preserving the current file-based architecture.
 
 ## Educational Artifacts
 
@@ -105,15 +133,18 @@ The following documents define project governance.
 
 | Document | Responsibility |
 |----------|----------------|
-| README | Repository entry point |
-| ROADMAP | Learning progression |
-| ARCHITECTURE | Repository architecture |
-| project-manifest | Project identity and objectives |
-| course-rules | Educational standards |
-| ai-guidelines | AI collaboration guidelines |
-| planning/DECISIONS | Architectural decisions (ADR) |
-| planning/BACKLOG | Planned work |
-| planning/SPRINTS | Development progress |
+| [README](../../README.md) | Repository entry point and primary navigation |
+| [ROADMAP](../../ROADMAP.md) | Authoritative learning progression and chapter status |
+| [ARCHITECTURE](../architecture/ARCHITECTURE.md) |Repository architecture and artifact relationships |
+| [project-manifest](../../project-manifest.md) | Project identity and course metadata |
+| [course-rules](../../course-rules.md) | Educational standards |
+| [ai-guidelines](../../ai-guidelines.md) | AI collaboration guidelines |
+| [planning/DECISIONS](../../planning/DECISIONS.md) | Architectural decisions (ADR) |
+| [planning/BACKLOG](../../planning/BACKLOG.md) | Planned work |
+| [planning/SPRINTS](../../planning/SPRINTS.md) | Development progress |
+| [planning/IDEAS](../../planning/IDEAS.md) | Captured improvement opportunities |
+| [planning/CHANGELOG_INTERNAL](../../planning/CHANGELOG_INTERNAL.md) | Internal change record |
+| [Release documentation](../releases/) | Release process, versioning, and release checklist |
 
 This separation ensures that educational content can evolve independently from project management and repository governance.
 
