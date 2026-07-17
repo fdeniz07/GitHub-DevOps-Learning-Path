@@ -48,15 +48,15 @@ This architecture also supports careful work on personal projects. You can decid
 | Term | Definition |
 | --- | --- |
 | Working directory | The files currently visible in your project folder and available to edit. |
-| Staging area | A reviewable selection of changes that are prepared for the next recorded history entry. |
+| Staging area | A reviewable selection of file versions prepared for the next recorded history entry. |
 | Local repository | The Git-managed history stored on your own computer. |
 | Snapshot | The recorded state of selected project files at a point in time. |
 | Commit | A named record that adds a selected snapshot to project history. |
-| `git status` | A command that reports which files are unchanged, modified, staged, or untracked. |
+| `git status` | A command that reports untracked, modified, and staged changes. |
 
 ## Theory
 
-Git manages a project through three local areas. You work with ordinary files in the working directory. You select the changes that belong together in the staging area. You then record that selected snapshot in the local repository.
+Git uses three local areas to manage a project. You work with ordinary files in the working directory, select related file versions in the staging area, and record that selected snapshot in the local repository.
 
 ```mermaid
 flowchart LR
@@ -94,16 +94,16 @@ A single file can have a different version in each area. For example, the reposi
 
 ```mermaid
 stateDiagram-v2
-    [*] --> Untracked: create a file
-    Untracked --> Modified: start tracking, then edit
-    Modified --> Staged: select the current change
-    Staged --> Recorded: record the selected snapshot
-    Recorded --> Modified: edit the file again
+    [*] --> Untracked: create a new file
+    Untracked --> Staged: select the file
+    Staged --> Recorded: record the snapshot
+    Recorded --> Modified: edit a tracked file
+    Modified --> Staged: select the change
 ```
 
-*Figure 2. A file can move through Git states as it is created, selected, recorded, and edited again.*
+*Figure 2. A new or modified file moves through Git’s main states before its selected version becomes recorded history.*
 
-The diagram is a simplified learning model. The important idea is that Git can distinguish unfinished work from selected work and recorded work.
+The diagram is a simplified learning model. A file can have versions in more than one area at the same time; the important idea is that Git distinguishes unfinished work, selected work, and recorded work.
 
 ### Why Selection Comes Before History
 
@@ -126,15 +126,13 @@ Assume a prepared repository contains a portfolio project. You correct a typo in
 ```mermaid
 flowchart LR
     A[Edit README.md] --> B[Working directory: modified]
-    B --> C[Select README.md]
-    C --> D[Staging area: ready]
-    D --> E[Record selected snapshot]
-    E --> F[Local repository: history updated]
+    B -->|git add README.md| C[Staging area: selected]
+    C -->|git commit| D[Local repository: history updated]
 ```
 
-*Figure 3. A focused documentation correction moves from an edit to a selected snapshot and then to local history.*
+*Figure 3. `git add` selects the documentation correction; `git commit` records that selected version in local history.*
 
-The following commands demonstrate the architecture. If Git is not installed yet, read them as a trace of where the change moves; installation and repository creation are covered in later chapters.
+The following commands demonstrate the architecture. If Git is not installed yet, read them as a trace of the change’s movement; installation and repository creation are covered in later chapters.
 
 ```bash
 git status
@@ -164,7 +162,7 @@ Changes not staged for commit:
   modified: index.html
 ```
 
-The report tells you that the documentation correction is selected, while the navigation work remains only in the working directory. Recording the selected README change does not automatically record the unfinished `index.html` work.
+The report shows that the documentation correction is selected, while the navigation work remains only in the working directory. Recording the selected README version does not automatically record the unfinished `index.html` work.
 
 ### Reading the Flow as a Timeline
 
