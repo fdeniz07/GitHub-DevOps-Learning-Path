@@ -3,3 +3,4 @@ PROJECT_RULES.md
 assets/images/.gitkeep
 docs/pdf/.gitkeep
 notebooks/tr/.gitkeep
+project-manifest.md

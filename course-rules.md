@@ -29,13 +29,14 @@ The course follows these principles:
 
 # Course Structure
 
-The learning path is organized into five major parts:
+The learning path is organized into six major parts:
 
 1. Git Foundations
 2. GitHub
-3. GitHub Actions
-4. CI/CD
-5. DevOps
+3. GitLab DevOps
+4. GitHub Actions
+5. CI/CD
+6. DevOps
 
 Each part consists of multiple chapters.
 

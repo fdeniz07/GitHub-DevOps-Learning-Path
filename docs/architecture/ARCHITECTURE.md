@@ -30,17 +30,17 @@ The repository is intended to support:
 
 The repository follows a modular structure where each top-level directory has a single responsibility.
 
-| Directory | Purpose |
-|------------|---------|
-| `notebooks/` | Primary educational content organized by language and chapter. |
-| `exercises/` | Practice exercises reinforcing notebook concepts. |
-| `labs/` | Guided hands-on implementations. |
-| `quizzes/` | Knowledge assessments. |
-| `docs/` | Repository documentation and architecture. |
-| `planning/` | Project planning, backlog, decisions, and sprint tracking. |
-| `templates/` | Reusable document and content templates. |
-| `assets/` | Images, diagrams, and static resources. |
-| `.github/` | GitHub configuration and community templates. |
+| Directory    | Purpose                                                                     |
+| ------------ | --------------------------------------------------------------------------- |
+| `notebooks/` | Primary educational content organized by language and chapter.              |
+| `exercises/` | Practice exercises organized by language and reinforcing notebook concepts. |
+| `labs/`      | Guided hands-on implementations organized by language.                      |
+| `quizzes/`   | Knowledge assessments organized by language.                                |
+| `docs/`      | Repository documentation and architecture.                                  |
+| `planning/`  | Project planning, backlog, decisions, and sprint tracking.                  |
+| `templates/` | Reusable document and content templates.                                    |
+| `assets/`    | Images, diagrams, and static resources.                                     |
+| `.github/`   | GitHub configuration and community templates.                               |
 
 Repository-level governance files remain at the repository root so they are easy to discover. The `README.md` is the entry point; `ROADMAP.md`, `project-manifest.md`, `course-rules.md`, and `ai-guidelines.md` define the course plan, project metadata, educational standards, and AI collaboration guidance respectively.
 
@@ -70,7 +70,7 @@ flowchart TD
     N --> S[Summary]
 ```
 
-*Figure 1. The roadmap defines chapter order; the notebook is the primary artifact that practice and assessment artifacts extend.*
+_Figure 1. The roadmap defines chapter order; the notebook is the primary artifact that practice and assessment artifacts extend._
 
 Each chapter is designed to progress from theory to practical application.
 
@@ -78,16 +78,16 @@ Each chapter is designed to progress from theory to practical application.
 
 The roadmap is the authoritative course sequence. A published chapter begins with a notebook in `notebooks/<language>/`; related exercises, labs, and quizzes extend that notebook rather than duplicate its explanation.
 
-| Artifact | Relationship | Navigation requirement |
-|----------|--------------|------------------------|
-| Roadmap entry | Defines the chapter's place and status in the learning path. | Links learners to the primary notebook when it is available. |
-| Notebook | Primary learning artifact for a chapter. | Links to its related exercise, lab, quiz, or summary when those artifacts are available. |
-| Exercise | Reinforces concepts introduced by its notebook. | Identifies the related chapter or notebook. |
-| Lab | Applies one or more notebook concepts in a realistic scenario. | Identifies its prerequisites and related chapter. |
-| Quiz | Assesses the learning objectives of its notebook. | Identifies the related chapter or notebook. |
-| Summary | Consolidates the chapter's key learning objectives. | Links back to the primary notebook. |
+| Artifact      | Relationship                                                   | Navigation requirement                                                                   |
+| ------------- | -------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Roadmap entry | Defines the chapter's place and status in the learning path.   | Links learners to the primary notebook when it is available.                             |
+| Notebook      | Primary learning artifact for a chapter.                       | Links to its related exercise, lab, quiz, or summary when those artifacts are available. |
+| Exercise      | Reinforces concepts introduced by its notebook.                | Identifies the related chapter or notebook.                                              |
+| Lab           | Applies one or more notebook concepts in a realistic scenario. | Identifies its prerequisites and related chapter.                                        |
+| Quiz          | Assesses the learning objectives of its notebook.              | Identifies the related chapter or notebook.                                              |
+| Summary       | Consolidates the chapter's key learning objectives.            | Links back to the primary notebook.                                                      |
 
-Artifacts may be introduced incrementally. A chapter is not required to have every companion artifact before its notebook is published; unavailable artifacts must not be presented as completed content.
+Published chapters provide a language-matched exercise, lab, and quiz. Companion artifacts are stored beneath `exercises/<language>/`, `labs/<language>/`, and `quizzes/<language>/`, matching the existing `notebooks/<language>/` structure. Legacy artifacts may remain at their current paths until they are mapped to the canonical curriculum.
 
 ## Canonical Curriculum and Legacy Material
 
@@ -103,6 +103,7 @@ Content metadata keeps the roadmap, repository navigation, and individual learni
 - The repository root `project-manifest.md` records project-wide course, language, output, difficulty, and AI-framework metadata.
 - Each published learning artifact uses a clear, ordered filename and states its language, chapter context, and prerequisites or related artifacts in its content.
 - When an artifact is added, its navigation links and the corresponding roadmap status are reviewed together.
+- English is the reviewed source edition. Turkish and German editions record their own version, review state, and synchronization date in the translation-status matrix under `planning/`.
 
 This lightweight approach makes relationships visible to learners and maintainers while preserving the current file-based architecture.
 
@@ -136,20 +137,20 @@ Repository governance is separated from educational content.
 
 The following documents define project governance.
 
-| Document | Responsibility |
-|----------|----------------|
-| [README](../../README.md) | Repository entry point and primary navigation |
-| [ROADMAP](../../ROADMAP.md) | Authoritative learning progression and chapter status |
-| [ARCHITECTURE](../architecture/ARCHITECTURE.md) |Repository architecture and artifact relationships |
-| [project-manifest](../../project-manifest.md) | Project identity and course metadata |
-| [course-rules](../../course-rules.md) | Educational standards |
-| [ai-guidelines](../../ai-guidelines.md) | AI collaboration guidelines |
-| [planning/DECISIONS](../../planning/DECISIONS.md) | Architectural decisions (ADR) |
-| [planning/BACKLOG](../../planning/BACKLOG.md) | Planned work |
-| [planning/SPRINTS](../../planning/SPRINTS.md) | Development progress |
-| [planning/IDEAS](../../planning/IDEAS.md) | Captured improvement opportunities |
-| [planning/CHANGELOG_INTERNAL](../../planning/CHANGELOG_INTERNAL.md) | Internal change record |
-| [Release documentation](../releases/) | Release process, versioning, and release checklist |
+| Document                                                            | Responsibility                                        |
+| ------------------------------------------------------------------- | ----------------------------------------------------- |
+| [README](../../README.md)                                           | Repository entry point and primary navigation         |
+| [ROADMAP](../../ROADMAP.md)                                         | Authoritative learning progression and chapter status |
+| [ARCHITECTURE](../architecture/ARCHITECTURE.md)                     | Repository architecture and artifact relationships    |
+| [project-manifest](../../project-manifest.md)                       | Project identity and course metadata                  |
+| [course-rules](../../course-rules.md)                               | Educational standards                                 |
+| [ai-guidelines](../../ai-guidelines.md)                             | AI collaboration guidelines                           |
+| [planning/DECISIONS](../../planning/DECISIONS.md)                   | Architectural decisions (ADR)                         |
+| [planning/BACKLOG](../../planning/BACKLOG.md)                       | Planned work                                          |
+| [planning/SPRINTS](../../planning/SPRINTS.md)                       | Development progress                                  |
+| [planning/IDEAS](../../planning/IDEAS.md)                           | Captured improvement opportunities                    |
+| [planning/CHANGELOG_INTERNAL](../../planning/CHANGELOG_INTERNAL.md) | Internal change record                                |
+| [Release documentation](../releases/)                               | Release process, versioning, and release checklist    |
 
 This separation ensures that educational content can evolve independently from project management and repository governance.
 

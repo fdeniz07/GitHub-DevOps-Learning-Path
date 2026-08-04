@@ -18,13 +18,13 @@ Understand version control concepts and become confident using Git in daily deve
 
 ### Chapters
 
-- [ ] [01 - Why Version Control?](notebooks/en/01-why-version-control.md) *(Draft)*
-- [ ] [02 - Git Architecture](notebooks/en/02-git-architecture.md) *(Draft)*
-- [ ] 03 - Installing Git
-- [ ] 04 - Creating Your First Repository
-- [ ] 05 - Working with Commits
-- [ ] 06 - Branching Strategies
-- [ ] 07 - Merge & Merge Conflicts
+- [ ] [01 - Why Version Control?](notebooks/en/01-why-version-control.md) _(Draft)_
+- [ ] [02 - Git Architecture](notebooks/en/02-git-architecture.md) _(Draft)_
+- [ ] [03 - Installing Git](notebooks/en/03-installing-git.md) _(Draft)_
+- [ ] [04 - Creating Your First Repository](notebooks/en/04-creating-your-first-repository.md) _(Draft)_
+- [ ] [05 - Working with Commits](notebooks/en/05-working-with-commits.md) _(Draft)_
+- [ ] [06 - Branching Strategies](notebooks/en/06-branching-strategies.md) _(Draft)_
+- [ ] [07 - Merge & Merge Conflicts](notebooks/en/07-merge-and-merge-conflicts.md) _(Draft)_
 - [ ] 08 - Git Internals
 - [ ] 09 - Advanced Git Techniques
 
@@ -48,7 +48,29 @@ Learn how modern development teams collaborate using GitHub.
 
 ---
 
-# Part 3 — GitHub Actions
+# Part 3 — GitLab DevOps
+
+## Goal
+
+Learn to collaborate, automate delivery, and apply DevSecOps practices with GitLab.
+
+### Chapters
+
+- [ ] 17 - GitLab Fundamentals
+- [ ] 18 - Groups, Projects, Members & Permissions
+- [ ] 19 - Repository Access, Clone & Remote Workflows
+- [ ] 20 - Work Items, Issues & Planning
+- [ ] 21 - Merge Requests & Code Review
+- [ ] 22 - Releases, Packages & Container Registry
+- [ ] 23 - GitLab CI/CD Foundations
+- [ ] 24 - `.gitlab-ci.yml`, Pipelines, Stages & Jobs
+- [ ] 25 - Runners, Variables, Caching & Artifacts
+- [ ] 26 - Environments & Deployments
+- [ ] 27 - DevSecOps, Security Scans & Compliance
+
+---
+
+# Part 4 — GitHub Actions
 
 ## Goal
 
@@ -56,21 +78,21 @@ Automate software development workflows using GitHub Actions.
 
 ### Chapters
 
-- [ ] 17 - Introduction to GitHub Actions
-- [ ] 18 - Workflow Anatomy
-- [ ] 19 - YAML Fundamentals
-- [ ] 20 - Jobs & Steps
-- [ ] 21 - GitHub Runners
-- [ ] 22 - Marketplace Actions
-- [ ] 23 - Writing Custom Actions
-- [ ] 24 - Composite Actions
-- [ ] 25 - Matrix Builds
-- [ ] 26 - Dependency Caching
-- [ ] 27 - Artifacts
+- [ ] 28 - Introduction to GitHub Actions
+- [ ] 29 - Workflow Anatomy
+- [ ] 30 - YAML Fundamentals
+- [ ] 31 - Jobs & Steps
+- [ ] 32 - GitHub Runners
+- [ ] 33 - Marketplace Actions
+- [ ] 34 - Writing Custom Actions
+- [ ] 35 - Composite Actions
+- [ ] 36 - Matrix Builds
+- [ ] 37 - Dependency Caching
+- [ ] 38 - Artifacts
 
 ---
 
-# Part 4 — Continuous Integration & Continuous Delivery
+# Part 5 — Continuous Integration & Continuous Delivery
 
 ## Goal
 
@@ -78,17 +100,17 @@ Build reliable CI/CD pipelines for modern software projects.
 
 ### Chapters
 
-- [ ] 28 - Continuous Integration
-- [ ] 29 - Continuous Delivery
-- [ ] 30 - Continuous Deployment
-- [ ] 31 - Secrets & Variables
-- [ ] 32 - CodeQL
-- [ ] 33 - Dependabot
-- [ ] 34 - Security Best Practices
+- [ ] 39 - Continuous Integration
+- [ ] 40 - Continuous Delivery
+- [ ] 41 - Continuous Deployment
+- [ ] 42 - Secrets & Variables
+- [ ] 43 - CodeQL
+- [ ] 44 - Dependabot
+- [ ] 45 - Security Best Practices
 
 ---
 
-# Part 5 — DevOps
+# Part 6 — DevOps
 
 ## Goal
 
@@ -96,12 +118,12 @@ Apply DevOps principles to build, package, deploy, and monitor applications.
 
 ### Chapters
 
-- [ ] 35 - Docker Fundamentals
-- [ ] 36 - Docker Build Pipelines
-- [ ] 37 - Container Registries
-- [ ] 38 - Cloud Deployments
-- [ ] 39 - Monitoring & Observability
-- [ ] 40 - Enterprise CI/CD Pipeline
+- [ ] 46 - Docker Fundamentals
+- [ ] 47 - Docker Build Pipelines
+- [ ] 48 - Container Registries
+- [ ] 49 - Cloud Deployments
+- [ ] 50 - Monitoring & Observability
+- [ ] 51 - Enterprise CI/CD Pipeline
 
 ---
 
@@ -111,6 +133,7 @@ After completing this learning path, learners will be able to:
 
 - Use Git confidently in real-world projects.
 - Collaborate effectively using GitHub.
+- Collaborate and deliver software with GitLab.
 - Manage branches and Pull Requests.
 - Build automation workflows with GitHub Actions.
 - Design and implement CI/CD pipelines.
@@ -122,20 +145,21 @@ After completing this learning path, learners will be able to:
 
 # Progress Tracking
 
-| Part | Status |
-|------|--------|
+| Part            | Status         |
+| --------------- | -------------- |
 | Git Foundations | 🚧 In Progress |
-| GitHub | ⏳ Planned |
-| GitHub Actions | ⏳ Planned |
-| CI/CD | ⏳ Planned |
-| DevOps | ⏳ Planned |
+| GitHub          | ⏳ Planned     |
+| GitLab DevOps   | ⏳ Planned     |
+| GitHub Actions  | ⏳ Planned     |
+| CI/CD           | ⏳ Planned     |
+| DevOps          | ⏳ Planned     |
 
 ---
 
 # Repository Progress
 
-- Total Parts: **5**
-- Total Chapters: **40**
+- Total Parts: **6**
+- Total Chapters: **51**
 - Completed Chapters: **0**
 - Current Focus: **Part 1 – Git Foundations**
 
