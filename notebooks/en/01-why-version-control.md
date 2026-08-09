@@ -10,8 +10,8 @@ version: 1.0
 last_updated: 2026-07-17
 ---
 
-> **Navigation:** Previous: Not available | [Roadmap](../../ROADMAP.md) | Next: Chapter 02 (coming soon)
-
+> **Navigation:** Previous: Not available | [Roadmap](../../ROADMAP.md) | [Next: Chapter 02](02-git-architecture.md)
+>
 > **Level:** Beginner · **Estimated Time:** 60 min · **Prerequisites:** None
 
 ## Learning Objectives
@@ -43,15 +43,15 @@ Professional teams use version control every day because it gives changes a depe
 
 ## Key Terms
 
-| Term | Definition |
-|------|------------|
+| Term            | Definition                                                                                                                          |
+| --------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
 | Version control | A system for recording changes to a project over time so earlier states and the context of changes can be understood and recovered. |
-| Version history | The ordered record of a project's meaningful changes. |
-| Traceability | The ability to connect a change with its reason, time, and author or source. |
-| Repository | The conceptual home for a project and its version history. |
-| Git | A version control system used to record and manage project history. |
-| GitHub | A collaboration platform built around Git repositories. |
-| Backup | A copy kept primarily to protect against loss or failure. |
+| Version history | The ordered record of a project's meaningful changes.                                                                               |
+| Traceability    | The ability to connect a change with its reason, time, and author or source.                                                        |
+| Repository      | The conceptual home for a project and its version history.                                                                          |
+| Git             | A version control system used to record and manage project history.                                                                 |
+| GitHub          | A collaboration platform built around Git repositories.                                                                             |
+| Backup          | A copy kept primarily to protect against loss or failure.                                                                           |
 
 ## Theory
 
@@ -67,7 +67,7 @@ flowchart LR
     F --> G[Recover safely]
 ```
 
-*Figure 1. Recorded history turns a failed change into a recoverable investigation.*
+_Figure 1. Recorded history turns a failed change into a recoverable investigation._
 
 ### Change Needs Context
 
@@ -82,7 +82,7 @@ timeline
     Thursday : Registration stops working
 ```
 
-*Figure 2. A change timeline identifies the investigation window between the last working state and the failure.*
+_Figure 2. A change timeline identifies the investigation window between the last working state and the failure._
 
 The timeline makes the investigation boundary visible: the useful question is not “what is in the file now?” but “what changed between the last working state and the first failing state?” Version history preserves that path.
 
@@ -120,7 +120,7 @@ flowchart TD
     E --> F[Clear recovery point and change context]
 ```
 
-*Figure 3. Manual copies preserve files, while recorded history preserves their relationship and context.*
+_Figure 3. Manual copies preserve files, while recorded history preserves their relationship and context._
 
 This is a decision about information, not storage space. Both approaches can retain old files; only a recorded history makes the relationship between those versions clear.
 
@@ -141,14 +141,14 @@ Think of a version-controlled project as a laboratory notebook. A good laborator
 
 ### Without Version Control vs With Version Control
 
-| Without Version Control | With Version Control |
-|---|---|
-| File names attempt to describe versions. | A project has an ordered history of recorded changes. |
-| It is difficult to know which copy is current. | The project has a shared source of truth. |
-| Recovering an earlier working state depends on finding the right copy. | Earlier recorded states can be identified and restored. |
-| The reason for a change is often forgotten. | Changes can carry useful context for future readers. |
-| Team members may overwrite or duplicate one another's work. | Work can be coordinated around the same project history. |
-| A backup may exist, but it may not explain how the project changed. | History explains the evolution of the project, not only its survival. |
+| Without Version Control                                                | With Version Control                                                  |
+| ---------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| File names attempt to describe versions.                               | A project has an ordered history of recorded changes.                 |
+| It is difficult to know which copy is current.                         | The project has a shared source of truth.                             |
+| Recovering an earlier working state depends on finding the right copy. | Earlier recorded states can be identified and restored.               |
+| The reason for a change is often forgotten.                            | Changes can carry useful context for future readers.                  |
+| Team members may overwrite or duplicate one another's work.            | Work can be coordinated around the same project history.              |
+| A backup may exist, but it may not explain how the project changed.    | History explains the evolution of the project, not only its survival. |
 
 ### Backup Is Not Version Control
 
@@ -181,7 +181,7 @@ flowchart LR
     D[GitHub<br/>collaboration platform] -. collaborates around .-> C
 ```
 
-*Figure 4. Git manages repository history; GitHub supports collaboration around Git repositories.*
+_Figure 4. Git manages repository history; GitHub supports collaboration around Git repositories._
 
 ## Practical Examples
 
@@ -228,13 +228,13 @@ The goal is not to organize the file yet. It is to notice the information that m
 
 ## Common Mistakes
 
-| Mistake | Why it causes problems | How to avoid it |
-| --- | --- | --- |
-| Treating version control as only a backup | It overlooks history, context, and collaboration. | Use version control to record meaningful project changes; keep backups for loss recovery. |
-| Naming copies `final`, `final-v2`, and `final-final` | Names become ambiguous and do not show the actual differences. | Keep one trusted project history instead of competing copies. |
-| Assuming only large teams need version control | Individual projects also change, break, and need recovery. | Start using version control on personal projects and assignments. |
-| Believing Git and GitHub are the same product | This confuses the version-control system with a collaboration platform. | Remember: Git manages history; GitHub builds collaboration around Git repositories. |
-| Waiting until a project is “finished” to track it | The most valuable history is created while decisions and changes happen. | Begin tracking as soon as a project has work worth preserving. |
+| Mistake                                              | Why it causes problems                                                   | How to avoid it                                                                           |
+| ---------------------------------------------------- | ------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------- |
+| Treating version control as only a backup            | It overlooks history, context, and collaboration.                        | Use version control to record meaningful project changes; keep backups for loss recovery. |
+| Naming copies `final`, `final-v2`, and `final-final` | Names become ambiguous and do not show the actual differences.           | Keep one trusted project history instead of competing copies.                             |
+| Assuming only large teams need version control       | Individual projects also change, break, and need recovery.               | Start using version control on personal projects and assignments.                         |
+| Believing Git and GitHub are the same product        | This confuses the version-control system with a collaboration platform.  | Remember: Git manages history; GitHub builds collaboration around Git repositories.       |
+| Waiting until a project is “finished” to track it    | The most valuable history is created while decisions and changes happen. | Begin tracking as soon as a project has work worth preserving.                            |
 
 ### Learning Check
 
@@ -258,11 +258,11 @@ If any answer is yes, you have already encountered the problem version control i
 
 ## Exercise
 
-### Objective
+### Exercise Objective
 
 Analyze the limitations of manually versioned project files and explain how version control resolves the identified problems.
 
-### Task
+### Exercise Task
 
 You inherit this folder from a classmate who was preparing a portfolio website:
 
@@ -282,30 +282,30 @@ portfolio-site/
 3. Identify two risks if another developer begins work from one of these copies.
 4. Explain how version history, traceability, recovery, and a shared source of truth would improve this situation.
 
-### Expected Outcome
+### Exercise Expected Outcome
 
 You can explain why a collection of manually named copies is not a reliable project history and describe the version-control capabilities that address each problem.
 
 ## Lab
 
-### Objective
+### Lab Objective
 
 Experience the confusion of manual versioning in a small, realistic project and identify why version control is needed. This lab deliberately uses no Git.
 
-### Requirements
+### Lab Requirements
 
 - A text editor and file manager.
 - A new empty folder for the lab.
 - Completion of this notebook.
 
-### Tasks
+### Lab Tasks
 
 1. Create a small project folder named `campus-events-site` containing an `index.html` file and a `README.md` file. Add a simple event title and a short setup note. Copy the folder and rename the copy `campus-events-site-final`.
 2. In the original folder, change the event title and add a registration note. Then introduce a deliberate mistake: remove a line that made the registration note understandable. Copy this folder as `campus-events-site-final-v2`.
 3. In `campus-events-site-final`, fix the registration note but also change the README. Create one more copy named `campus-events-site-use-this`. Now answer: Which folder contains the intended event title? Which has the correct registration note? Which README is current? What changed in each copy, and why?
 4. Write a short reflection describing the information you could not determine confidently. Map each uncertainty to a version-control benefit: history, recovery, traceability, experimentation, collaboration, or shared source of truth.
 
-### Expected Outcome
+### Lab Expected Outcome
 
 You have several plausible “final” project copies and a written explanation of the uncertainty they create. You can connect that confusion to the practical need for version control without using any Git commands.
 
@@ -326,10 +326,10 @@ Now that you understand why version control exists, the next chapter introduces 
 ### Related Content
 
 - Previous chapter: Not available
-- Next chapter: Chapter 02 — Git Architecture (coming soon)
-- Related exercise: Not yet available
-- Related lab: Not yet available
-- Related quiz: Not yet available
+- Next chapter: [Chapter 02 — Git Architecture](02-git-architecture.md)
+- Related exercise: [Version Control Analysis](../../exercises/en/01-version-control-analysis.md)
+- Related lab: [Manual Versioning Lab](../../labs/en/01-manual-versioning-lab.md)
+- Related quiz: [Why Version Control Quiz](../../quizzes/en/01-why-version-control-quiz.md)
 
 ## Further Reading
 
@@ -337,7 +337,7 @@ Now that you understand why version control exists, the next chapter introduces 
 - [Git documentation: What is Git?](https://git-scm.com/book/en/v2/Getting-Started-What-is-Git%3F)
 - [GitHub Docs: About Git](https://docs.github.com/en/get-started/using-git/about-git)
 
-## AI Tip *(Optional)*
+## AI Tip _(Optional)_
 
 Prompt example:
 
