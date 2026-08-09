@@ -11,7 +11,7 @@ last_updated: 2026-07-17
 ---
 
 > **Navigation:** [Previous: Chapter 01](01-why-version-control.md) | [Roadmap](../../ROADMAP.md) | Next: Chapter 03 (coming soon)
-
+>
 > **Level:** Beginner · **Estimated Time:** 75 min · **Prerequisites:** [Chapter 01: Why Version Control?](01-why-version-control.md)
 
 ## Learning Objectives
@@ -45,14 +45,14 @@ This architecture also supports careful work on personal projects. You can decid
 
 ## Key Terms
 
-| Term | Definition |
-| --- | --- |
-| Working directory | The files currently visible in your project folder and available to edit. |
-| Staging area | A reviewable selection of file versions prepared for the next recorded history entry. |
-| Local repository | The Git-managed history stored on your own computer. |
-| Snapshot | The recorded state of selected project files at a point in time. |
-| Commit | A named record that adds a selected snapshot to project history. |
-| `git status` | A command that reports untracked, modified, and staged changes. |
+| Term              | Definition                                                                            |
+| ----------------- | ------------------------------------------------------------------------------------- |
+| Working directory | The files currently visible in your project folder and available to edit.             |
+| Staging area      | A reviewable selection of file versions prepared for the next recorded history entry. |
+| Local repository  | The Git-managed history stored on your own computer.                                  |
+| Snapshot          | The recorded state of selected project files at a point in time.                      |
+| Commit            | A named record that adds a selected snapshot to project history.                      |
+| `git status`      | A command that reports untracked, modified, and staged changes.                       |
 
 ## Theory
 
@@ -64,7 +64,7 @@ flowchart LR
     B -->|record the snapshot| C[Local repository<br/>project history]
 ```
 
-*Figure 1. Git separates editing, selecting, and recording so a project history can contain focused changes.*
+_Figure 1. Git separates editing, selecting, and recording so a project history can contain focused changes._
 
 ### The Working Directory
 
@@ -78,7 +78,7 @@ The staging area is a deliberate checkpoint between editing and history. It hold
 
 This separation solves a practical problem. Suppose you fix a typo in `README.md` while also experimenting with a half-finished redesign in `index.html`. You can select the documentation fix without selecting the unfinished redesign. The next history entry can then explain one coherent change.
 
-The staging area is sometimes called the *index*. For this course, use “staging area” because it describes its job: it is where you prepare the next snapshot.
+The staging area is sometimes called the _index_. For this course, use “staging area” because it describes its job: it is where you prepare the next snapshot.
 
 ### The Local Repository
 
@@ -101,7 +101,7 @@ stateDiagram-v2
     Modified --> Staged: select the change
 ```
 
-*Figure 2. A new or modified file moves through Git’s main states before its selected version becomes recorded history.*
+_Figure 2. A new or modified file moves through Git’s main states before its selected version becomes recorded history._
 
 The diagram is a simplified learning model. A file can have versions in more than one area at the same time; the important idea is that Git distinguishes unfinished work, selected work, and recorded work.
 
@@ -109,11 +109,11 @@ The diagram is a simplified learning model. A file can have versions in more tha
 
 The staging area may feel like an extra step at first. Its value becomes clear when several changes are happening at once.
 
-| Situation | Without a staging area | With a staging area |
-| --- | --- | --- |
-| A bug fix and a formatting change happen together | Both may be recorded as one unclear change. | The bug fix can be selected and recorded separately. |
-| A feature is incomplete | Saving files can accidentally look like a finished milestone. | Only the ready part is selected for history. |
-| A teammate reads the history later | The purpose of a broad snapshot is difficult to infer. | Each record can represent one understandable unit of work. |
+| Situation                                         | Without a staging area                                        | With a staging area                                        |
+| ------------------------------------------------- | ------------------------------------------------------------- | ---------------------------------------------------------- |
+| A bug fix and a formatting change happen together | Both may be recorded as one unclear change.                   | The bug fix can be selected and recorded separately.       |
+| A feature is incomplete                           | Saving files can accidentally look like a finished milestone. | Only the ready part is selected for history.               |
+| A teammate reads the history later                | The purpose of a broad snapshot is difficult to infer.        | Each record can represent one understandable unit of work. |
 
 Selection is not bureaucracy. It is how Git lets history express intent.
 
@@ -130,7 +130,7 @@ flowchart LR
     C -->|git commit| D[Local repository: history updated]
 ```
 
-*Figure 3. `git add` selects the documentation correction; `git commit` records that selected version in local history.*
+_Figure 3. `git add` selects the documentation correction; `git commit` records that selected version in local history._
 
 The following commands demonstrate the architecture. If Git is not installed yet, read them as a trace of the change’s movement; installation and repository creation are covered in later chapters.
 
@@ -142,13 +142,13 @@ git commit -m "docs: correct setup instruction"
 git status
 ```
 
-| Command | Architectural meaning |
-| --- | --- |
-| `git status` before selection | Shows that `README.md` changed in the working directory. |
-| `git add README.md` | Selects the current version of `README.md` for the staging area. |
-| `git status` after selection | Shows that the selected version is ready for the next commit. |
-| `git commit -m "..."` | Records the selected snapshot in the local repository. |
-| `git status` after recording | Confirms whether the working directory and staging area have remaining changes. |
+| Command                       | Architectural meaning                                                           |
+| ----------------------------- | ------------------------------------------------------------------------------- |
+| `git status` before selection | Shows that `README.md` changed in the working directory.                        |
+| `git add README.md`           | Selects the current version of `README.md` for the staging area.                |
+| `git status` after selection  | Shows that the selected version is ready for the next commit.                   |
+| `git commit -m "..."`         | Records the selected snapshot in the local repository.                          |
+| `git status` after recording  | Confirms whether the working directory and staging area have remaining changes. |
 
 ### A Separate Unfinished Change
 
@@ -176,7 +176,7 @@ timeline
     09:11 : Continue unrelated navigation work
 ```
 
-*Figure 4. The selected documentation change becomes history without waiting for unrelated work to be finished.*
+_Figure 4. The selected documentation change becomes history without waiting for unrelated work to be finished._
 
 This is the discipline that makes history useful: one record communicates one meaningful step.
 
@@ -199,12 +199,12 @@ Your answer should distinguish the working directory from the staging area. You 
 
 ## Common Mistakes
 
-| Mistake | Why it causes problems | How to avoid it |
-| --- | --- | --- |
-| Assuming every saved file is already in Git history | Saving changes the working directory but does not record history. | Check the file’s state with `git status`. |
-| Treating the staging area as a second copy of the project | This hides its role as the planned next snapshot. | Think of it as a selection list for one history entry. |
-| Selecting every changed file automatically | Unrelated changes make history difficult to understand and review. | Select only the files that support one meaningful change. |
-| Believing a commit shares work with a team | A commit records history locally; sharing is introduced in later chapters. | Separate local history from remote collaboration in your mental model. |
+| Mistake                                                   | Why it causes problems                                                     | How to avoid it                                                        |
+| --------------------------------------------------------- | -------------------------------------------------------------------------- | ---------------------------------------------------------------------- |
+| Assuming every saved file is already in Git history       | Saving changes the working directory but does not record history.          | Check the file’s state with `git status`.                              |
+| Treating the staging area as a second copy of the project | This hides its role as the planned next snapshot.                          | Think of it as a selection list for one history entry.                 |
+| Selecting every changed file automatically                | Unrelated changes make history difficult to understand and review.         | Select only the files that support one meaningful change.              |
+| Believing a commit shares work with a team                | A commit records history locally; sharing is introduced in later chapters. | Separate local history from remote collaboration in your mental model. |
 
 ## Summary
 
@@ -221,11 +221,11 @@ Your answer should distinguish the working directory from the staging area. You 
 
 ## Exercise
 
-### Objective
+### Exercise Objective
 
 Classify project changes by Git area and explain which changes should be selected for one focused history entry.
 
-### Task
+### Exercise Task
 
 You are working on a portfolio site and have made these changes:
 
@@ -235,30 +235,30 @@ You are working on a portfolio site and have made these changes:
 
 For each file, state whether it should remain in the working directory, be placed in the staging area, or be represented in the local repository after recording a documentation fix. Explain your reasoning in one or two sentences per file.
 
-### Expected Outcome
+### Exercise Expected Outcome
 
 You can distinguish edited work, selected work, and recorded history, and can justify why unrelated or temporary files should not be included in a focused change.
 
 ## Lab
 
-### Objective
+### Lab Objective
 
 Use a prepared practice repository to observe the movement of one change through Git’s three local areas.
 
-### Requirements
+### Lab Requirements
 
 - Git installed on your computer.
 - A prepared repository supplied by an instructor or created in a later chapter.
 - A text editor and terminal.
 
-### Tasks
+### Lab Tasks
 
 1. Edit `README.md` in the prepared repository by correcting one sentence. Run `git status` and record what it reports about the file.
 2. Run `git add README.md`, then run `git status` again. Compare the two outputs and identify the Git area that changed.
 3. Record the selected README change with a concise commit message. Run `git status` a final time and explain what moved into the local repository.
 4. Make a small unfinished change to `index.html` without selecting it. Use `git status` to verify that the recorded README change and unfinished HTML work are in different states.
 
-### Expected Outcome
+### Lab Expected Outcome
 
 You can provide three `git status` observations that show a file moving from the working directory to the staging area and then into local history, while unrelated work remains unselected.
 
@@ -280,9 +280,9 @@ You now understand the local areas that make Git history possible. The next chap
 
 - Previous chapter: [Chapter 01 — Why Version Control?](01-why-version-control.md)
 - Next chapter: Chapter 03 — Installing Git (coming soon)
-- Related exercise: Included in this notebook
-- Related lab: Included in this notebook
-- Related quiz: Included in this notebook
+- Related exercise: [Git Areas Classification](../../exercises/en/02-git-areas-classification.md)
+- Related lab: [Git Change Flow Lab](../../labs/en/02-git-change-flow-lab.md)
+- Related quiz: [Git Architecture Quiz](../../quizzes/en/02-git-architecture-quiz.md)
 
 ## Further Reading
 
@@ -290,7 +290,7 @@ You now understand the local areas that make Git history possible. The next chap
 - [Git documentation: Git Basics — Viewing the Commit History](https://git-scm.com/book/en/v2/Git-Basics-Viewing-the-Commit-History)
 - [GitHub Docs: About Git](https://docs.github.com/en/get-started/using-git/about-git)
 
-## AI Tip *(Optional)*
+## AI Tip _(Optional)_
 
 Prompt example:
 
