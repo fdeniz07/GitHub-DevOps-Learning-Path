@@ -25,8 +25,8 @@ Understand version control concepts and become confident using Git in daily deve
 - [ ] [05 - Working with Commits](notebooks/en/05-working-with-commits.md) _(Draft)_
 - [ ] [06 - Branching Strategies](notebooks/en/06-branching-strategies.md) _(Draft)_
 - [ ] [07 - Merge & Merge Conflicts](notebooks/en/07-merge-and-merge-conflicts.md) _(Draft)_
-- [ ] 08 - Git Internals
-- [ ] 09 - Advanced Git Techniques
+- [ ] [08 - Git Internals](notebooks/en/08-git-internals.md) _(Draft)_
+- [ ] [09 - Advanced Git Techniques](notebooks/en/09-advanced-git-techniques.md) _(Draft)_
 
 ---
 
@@ -38,8 +38,8 @@ Learn how modern development teams collaborate using GitHub.
 
 ### Chapters
 
-- [ ] 10 - GitHub Fundamentals
-- [ ] 11 - Clone, Fork & Remote
+- [ ] [10 - GitHub Fundamentals](notebooks/en/10-github-fundamentals.md) _(Draft)_
+- [ ] [11 - Clone, Fork & Remote](notebooks/en/11-clone-fork-and-remote.md) _(Draft)_
 - [ ] 12 - Pull Requests
 - [ ] 13 - GitHub Projects
 - [ ] 14 - Issues & Discussions
