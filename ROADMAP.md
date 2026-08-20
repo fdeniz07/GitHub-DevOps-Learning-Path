@@ -40,11 +40,11 @@ Learn how modern development teams collaborate using GitHub.
 
 - [ ] [10 - GitHub Fundamentals](notebooks/en/10-github-fundamentals.md) _(Draft)_
 - [ ] [11 - Clone, Fork & Remote](notebooks/en/11-clone-fork-and-remote.md) _(Draft)_
-- [ ] 12 - Pull Requests
-- [ ] 13 - GitHub Projects
-- [ ] 14 - Issues & Discussions
-- [ ] 15 - Releases
-- [ ] 16 - GitHub Security
+- [ ] [12 - Pull Requests](notebooks/en/12-pull-requests.md) _(Draft)_
+- [ ] [13 - GitHub Projects](notebooks/en/13-github-projects.md) _(Draft)_
+- [ ] [14 - Issues & Discussions](notebooks/en/14-issues-and-discussions.md) _(Draft)_
+- [ ] [15 - Releases](notebooks/en/15-github-releases.md) _(Draft)_
+- [ ] [16 - GitHub Security](notebooks/en/16-github-security.md) _(Draft)_
 
 ---
 
