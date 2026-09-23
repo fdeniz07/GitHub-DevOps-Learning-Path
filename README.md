@@ -34,13 +34,14 @@ By completing this learning path, you will be able to:
 
 This course is divided into multiple parts.
 
-| Part | Topic | Status |
-|------|-------|--------|
-| Part 1 | Git Foundations | 🚧 In Progress (Initial content available) |
-| Part 2 | GitHub | ⏳ Planned |
-| Part 3 | GitHub Actions | ⏳ Planned |
-| Part 4 | CI/CD | ⏳ Planned |
-| Part 5 | DevOps | ⏳ Planned |
+| Part   | Topic           | Status                                                               |
+| ------ | --------------- | -------------------------------------------------------------------- |
+| Part 1 | Git Foundations | ✅ Draft complete through Chapter 09                                 |
+| Part 2 | GitHub          | ✅ Draft complete through Chapter 16                                 |
+| Part 3 | GitLab DevOps   | ✅ Draft complete through Chapter 27                                 |
+| Part 4 | GitHub Actions  | ✅ Draft complete in English, Turkish, and German through Chapter 38 |
+| Part 5 | CI/CD           | ⏳ Planned                                                           |
+| Part 6 | DevOps          | ⏳ Planned                                                           |
 
 Detailed chapter status and progress are maintained in the [roadmap](ROADMAP.md).
 
@@ -100,7 +101,7 @@ This project is planned to be available in:
 
 - English (Canonical)
 - Turkish (Translation)
-- German (Planned)
+- German (Translation)
 
 ---
 
