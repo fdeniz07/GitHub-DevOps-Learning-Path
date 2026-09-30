@@ -81,17 +81,17 @@ Automate software development workflows using GitHub Actions.
 
 ### Chapters
 
-- [ ] [28 - Introduction to GitHub Actions](notebooks/en/28-introduction-to-github-actions.md) _(Draft)_
-- [ ] [29 - Workflow Anatomy](notebooks/en/29-github-actions-workflow-anatomy.md) _(Draft)_
-- [ ] [30 - YAML Fundamentals](notebooks/en/30-yaml-fundamentals.md) _(Draft)_
-- [ ] [31 - Jobs & Steps](notebooks/en/31-github-actions-jobs-and-steps.md) _(Draft)_
-- [ ] [32 - GitHub Runners](notebooks/en/32-github-runners.md) _(Draft)_
-- [ ] [33 - Marketplace Actions](notebooks/en/33-github-marketplace-actions.md) _(Draft)_
-- [ ] [34 - Writing Custom Actions](notebooks/en/34-writing-custom-actions.md) _(Draft)_
-- [ ] [35 - Composite Actions](notebooks/en/35-composite-actions.md) _(Draft)_
-- [ ] [36 - Matrix Builds](notebooks/en/36-github-actions-matrix-builds.md) _(Draft)_
-- [ ] [37 - Dependency Caching](notebooks/en/37-github-actions-dependency-caching.md) _(Draft)_
-- [ ] [38 - Artifacts](notebooks/en/38-github-actions-artifacts.md) _(Draft)_
+- [x] [28 - Introduction to GitHub Actions](notebooks/en/28-introduction-to-github-actions.md) _(Draft)_
+- [x] [29 - Workflow Anatomy](notebooks/en/29-github-actions-workflow-anatomy.md) _(Draft)_
+- [x] [30 - YAML Fundamentals](notebooks/en/30-yaml-fundamentals.md) _(Draft)_
+- [x] [31 - Jobs & Steps](notebooks/en/31-github-actions-jobs-and-steps.md) _(Draft)_
+- [x] [32 - GitHub Runners](notebooks/en/32-github-runners.md) _(Draft)_
+- [x] [33 - Marketplace Actions](notebooks/en/33-github-marketplace-actions.md) _(Draft)_
+- [x] [34 - Writing Custom Actions](notebooks/en/34-writing-custom-actions.md) _(Draft)_
+- [x] [35 - Composite Actions](notebooks/en/35-composite-actions.md) _(Draft)_
+- [x] [36 - Matrix Builds](notebooks/en/36-github-actions-matrix-builds.md) _(Draft)_
+- [x] [37 - Dependency Caching](notebooks/en/37-github-actions-dependency-caching.md) _(Draft)_
+- [x] [38 - Artifacts](notebooks/en/38-github-actions-artifacts.md) _(Draft)_
   - English, Turkish, and German notebook, exercise, lab, and quiz artifacts are available as drafts as of 2026-09-22.
 
 ---
@@ -104,13 +104,14 @@ Build reliable CI/CD pipelines for modern software projects.
 
 ### Chapters
 
-- [ ] 39 - Continuous Integration
-- [ ] 40 - Continuous Delivery
-- [ ] 41 - Continuous Deployment
-- [ ] 42 - Secrets & Variables
-- [ ] 43 - CodeQL
-- [ ] 44 - Dependabot
-- [ ] 45 - Security Best Practices
+- [x] [39 - Continuous Integration](notebooks/en/39-continuous-integration.md) _(Draft)_
+- [x] [40 - Continuous Delivery](notebooks/en/40-continuous-delivery.md) _(Draft)_
+- [x] [41 - Continuous Deployment](notebooks/en/41-continuous-deployment.md) _(Draft)_
+- [x] [42 - Secrets & Variables](notebooks/en/42-secrets-and-variables.md) _(Draft)_
+- [x] [43 - CodeQL](notebooks/en/43-codeql.md) _(Draft)_
+- [x] [44 - Dependabot](notebooks/en/44-dependabot.md) _(Draft)_
+- [x] [45 - Security Best Practices](notebooks/en/45-security-best-practices.md) _(Draft)_
+  - English, Turkish, and German notebook, exercise, lab, and quiz artifacts are available as drafts as of 2026-09-23.
 
 ---
 
@@ -122,12 +123,13 @@ Apply DevOps principles to build, package, deploy, and monitor applications.
 
 ### Chapters
 
-- [ ] 46 - Docker Fundamentals
-- [ ] 47 - Docker Build Pipelines
-- [ ] 48 - Container Registries
-- [ ] 49 - Cloud Deployments
-- [ ] 50 - Monitoring & Observability
-- [ ] 51 - Enterprise CI/CD Pipeline
+- [x] [46 - Docker Fundamentals](notebooks/en/46-docker-fundamentals.md) _(Draft)_
+- [x] [47 - Docker Build Pipelines](notebooks/en/47-docker-build-pipelines.md) _(Draft)_
+- [x] [48 - Container Registries](notebooks/en/48-container-registries.md) _(Draft)_
+- [x] [49 - Cloud Deployments](notebooks/en/49-cloud-deployments.md) _(Draft)_
+- [x] [50 - Monitoring & Observability](notebooks/en/50-monitoring-and-observability.md) _(Draft)_
+- [x] [51 - Enterprise CI/CD Pipeline](notebooks/en/51-enterprise-cicd-pipeline.md) _(Draft)_
+  - English, Turkish, and German notebook, exercise, lab, and quiz artifacts are available as drafts as of 2026-09-24.
 
 ---
 
