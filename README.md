@@ -40,8 +40,8 @@ This course is divided into multiple parts.
 | Part 2 | GitHub          | ✅ Draft complete through Chapter 16                                 |
 | Part 3 | GitLab DevOps   | ✅ Draft complete through Chapter 27                                 |
 | Part 4 | GitHub Actions  | ✅ Draft complete in English, Turkish, and German through Chapter 38 |
-| Part 5 | CI/CD           | ⏳ Planned                                                           |
-| Part 6 | DevOps          | ⏳ Planned                                                           |
+| Part 5 | CI/CD           | ✅ Draft complete in English, Turkish, and German through Chapter 45 |
+| Part 6 | DevOps          | ✅ Draft complete in English, Turkish, and German through Chapter 51 |
 
 Detailed chapter status and progress are maintained in the [roadmap](ROADMAP.md).
 
